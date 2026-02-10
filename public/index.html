@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Express - การอบรมการขนส่งอย่างมีคุณภาพ</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-bolt logo-icon"></i>
+                <span>Flash <span class="text-yellow">Express</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">หน้าแรก</a></li>
+                <li><a href="#about">เกี่ยวกับเรา</a></li>
+                <li><a href="#courses">หลักสูตร</a></li>
+                <li><a href="#process">กระบวนการ</a></li>
+                <li><a href="#trainers">วิทยากร</a></li>
+                <li><a href="#register" class="btn btn-nav">ลงทะเบียน</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-particles" id="particles"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-award"></i> หลักสูตรอบรมประจำปี 2569
+            </div>
+            <h1 class="hero-title">
+                การอบรม<span class="text-yellow">การขนส่ง</span><br>
+                อย่างมี<span class="text-yellow">คุณภาพ</span>
+            </h1>
+            <p class="hero-subtitle">
+                พัฒนาทักษะการขนส่งสู่มาตรฐานระดับสากล เรียนรู้จากผู้เชี่ยวชาญ<br>
+                พร้อมเทคโนโลยีล้ำสมัยที่จะยกระดับการบริการของคุณ
+            </p>
+            <div class="hero-buttons">
+                <a href="#courses" class="btn btn-primary btn-lg">
+                    <i class="fas fa-play-circle"></i> ดูหลักสูตรทั้งหมด
+                </a>
+                <a href="#register" class="btn btn-outline btn-lg">
+                    <i class="fas fa-user-plus"></i> ลงทะเบียนเลย
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="5000">0</div>
+                    <div class="stat-label">ผู้ผ่านการอบรม</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">% ความพึงพอใจ</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">สาขาทั่วประเทศ</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1">0</div>
+                    <div class="stat-label">หลักสูตรพร้อมเรียน</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,60 L1440,120 L0,120 Z" fill="#ffffff"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">เกี่ยวกับเรา</span>
+                <h2 class="section-title">ทำไมต้องเลือก <span class="text-yellow">Flash Express</span></h2>
+                <p class="section-subtitle">เรามุ่งมั่นพัฒนาบุคลากรด้านโลจิสติกส์ให้มีคุณภาพระดับสากล</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>ขนส่งรวดเร็ว</h3>
+                    <p>ระบบขนส่งที่มีประสิทธิภาพ ส่งถึงมือผู้รับภายใน 1-2 วัน ครอบคลุมทั่วประเทศไทย</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>ปลอดภัยสูงสุด</h3>
+                    <p>ระบบติดตามพัสดุแบบ Real-time พร้อมประกันความเสียหายสูงสุด 50,000 บาท</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>บริการ 24/7</h3>
+                    <p>ทีมงานคอยให้บริการตลอด 24 ชั่วโมง แก้ไขปัญหาอย่างรวดเร็วทันใจ</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>อบรมมืออาชีพ</h3>
+                    <p>หลักสูตรที่ออกแบบโดยผู้เชี่ยวชาญ เน้นปฏิบัติจริง พร้อมใบรับรอง</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>เทคโนโลยีทันสมัย</h3>
+                    <p>ใช้ AI และ Machine Learning ในการเพิ่มประสิทธิภาพการจัดส่งพัสดุ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="section courses" id="courses">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">หลักสูตรอบรม</span>
+                <h2 class="section-title">หลักสูตร<span class="text-yellow">การอบรม</span>ทั้งหมด</h2>
+                <p class="section-subtitle">เลือกหลักสูตรที่เหมาะกับคุณ เพื่อพัฒนาทักษะการขนส่งสู่ระดับมืออาชีพ</p>
+            </div>
+            
+            <div class="course-filter">
+                <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
+                <button class="filter-btn" data-filter="beginner">สำหรับผู้เริ่มต้น</button>
+                <button class="filter-btn" data-filter="intermediate">ระดับกลาง</button>
+                <button class="filter-btn" data-filter="advanced">ระดับสูง</button>
+            </div>
+
+            <div class="courses-grid">
+                <!-- Course 1 -->
+                <div class="course-card" data-category="beginner">
+                    <div class="course-image">
+                        <div class="course-image-placeholder">
+                            <i class="fas fa-box-open"></i>
+                        </div>
+                        <span class="course-badge beginner">สำหรับผู้เริ่มต้น</span>
+                        <span class="course-price">ฟรี</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>ยกระดับบริการ สู่มือโปรด้านการขนส่ง</h3>
+                        <p>เพื่อให้สินค้าถึงปลายทาง ถูกต้อง ครบถ้วน และปลอดภัย สร้างมาตรฐานการทำงานเดียวกันในองค์กร</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 3 ชั่วโมง</span>
+                            <span><i class="fas fa-users"></i> 30 คน</span>
+                            <span><i class="fas fa-star"></i> -</span>
+                        </div>
+                        <a href="#register" class="btn btn-course">ลงทะเบียน <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Course 2 - ระดับกลาง (ยังไม่เปิด) -->
+                <div class="course-card course-coming-soon" data-category="intermediate">
+                    <div class="course-image">
+                        <div class="course-image-placeholder">
+                            <i class="fas fa-warehouse"></i>
+                        </div>
+                        <span class="course-badge intermediate">ระดับกลาง</span>
+                        <span class="course-coming-badge"><i class="fas fa-hourglass-half"></i> เร็วๆ นี้</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>การบริหารคลังสินค้า</h3>
+                        <p>ระบบจัดการคลังสินค้าอัจฉริยะ การจัดเรียง SKU และการควบคุมสต็อก</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 4 ชั่วโมง</span>
+                            <span><i class="fas fa-users"></i> 30 คน</span>
+                            <span><i class="fas fa-star"></i> -</span>
+                        </div>
+                        <span class="btn btn-course-disabled"><i class="fas fa-lock"></i> ยังไม่เปิดให้ลงทะเบียน</span>
+                    </div>
+                </div>
+
+                <!-- Course 3 - ระดับกลาง (ยังไม่เปิด) -->
+                <div class="course-card course-coming-soon" data-category="intermediate">
+                    <div class="course-image">
+                        <div class="course-image-placeholder">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <span class="course-badge intermediate">ระดับกลาง</span>
+                        <span class="course-coming-badge"><i class="fas fa-hourglass-half"></i> เร็วๆ นี้</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>การบริการลูกค้าเป็นเลิศ</h3>
+                        <p>เทคนิคการสื่อสาร การแก้ปัญหาเฉพาะหน้า สร้างความประทับใจให้ลูกค้า</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 3 ชั่วโมง</span>
+                            <span><i class="fas fa-users"></i> 30 คน</span>
+                            <span><i class="fas fa-star"></i> -</span>
+                        </div>
+                        <span class="btn btn-course-disabled"><i class="fas fa-lock"></i> ยังไม่เปิดให้ลงทะเบียน</span>
+                    </div>
+                </div>
+
+                <!-- Course 4 - ระดับสูง (ยังไม่เปิด) -->
+                <div class="course-card course-coming-soon" data-category="advanced">
+                    <div class="course-image">
+                        <div class="course-image-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <span class="course-badge advanced">ระดับสูง</span>
+                        <span class="course-coming-badge"><i class="fas fa-hourglass-half"></i> เร็วๆ นี้</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>เทคโนโลยี AI ในโลจิสติกส์</h3>
+                        <p>การนำ AI, IoT และ Big Data มาใช้ในการจัดการระบบโลจิสติกส์แบบอัตโนมัติ</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 6 ชั่วโมง</span>
+                            <span><i class="fas fa-users"></i> 30 คน</span>
+                            <span><i class="fas fa-star"></i> -</span>
+                        </div>
+                        <span class="btn btn-course-disabled"><i class="fas fa-lock"></i> ยังไม่เปิดให้ลงทะเบียน</span>
+                    </div>
+                </div>
+
+                <!-- Course 5 - ระดับสูง (ยังไม่เปิด) -->
+                <div class="course-card course-coming-soon" data-category="advanced">
+                    <div class="course-image">
+                        <div class="course-image-placeholder">
+                            <i class="fas fa-globe-asia"></i>
+                        </div>
+                        <span class="course-badge advanced">ระดับสูง</span>
+                        <span class="course-coming-badge"><i class="fas fa-hourglass-half"></i> เร็วๆ นี้</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>การขนส่งระหว่างประเทศ</h3>
+                        <p>กฎระเบียบ พิธีการศุลกากร และการจัดการขนส่งข้ามพรมแดนอย่างมีประสิทธิภาพ</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 6 ชั่วโมง</span>
+                            <span><i class="fas fa-users"></i> 40 คน</span>
+                            <span><i class="fas fa-star"></i> -</span>
+                        </div>
+                        <span class="btn btn-course-disabled"><i class="fas fa-lock"></i> ยังไม่เปิดให้ลงทะเบียน</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">กระบวนการ</span>
+                <h2 class="section-title">ขั้นตอน<span class="text-yellow">การอบรม</span></h2>
+                <p class="section-subtitle">กระบวนการอบรมที่เป็นระบบ ง่าย และมีประสิทธิภาพ</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-user-plus"></i></div>
+                        <h3>ลงทะเบียน</h3>
+                        <p>สมัครเข้าร่วมหลักสูตรผ่านระบบออนไลน์ เลือกหลักสูตรที่สนใจ</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-book-open"></i></div>
+                        <h3>เรียนรู้ทฤษฎี</h3>
+                        <p>ศึกษาเนื้อหาจากผู้เชี่ยวชาญ พร้อมเอกสารประกอบการเรียน</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-hands-helping"></i></div>
+                        <h3>ฝึกปฏิบัติ</h3>
+                        <p>ลงมือปฏิบัติจริงในสถานการณ์จำลอง พร้อมรับคำแนะนำจากพี่เลี้ยง</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-clipboard-check"></i></div>
+                        <h3>ทดสอบ</h3>
+                        <p>ทดสอบความรู้และทักษะ เพื่อประเมินผลการเรียนรู้</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-certificate"></i></div>
+                        <h3>รับใบรับรอง</h3>
+                        <p>ผู้ที่ผ่านเกณฑ์จะได้รับใบรับรองการผ่านการอบรมจาก Flash Express</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section class="section trainers" id="trainers">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">ทีมวิทยากร</span>
+                <h2 class="section-title">พบกับ<span class="text-yellow">วิทยากร</span>ของเรา</h2>
+                <p class="section-subtitle">ทีมผู้เชี่ยวชาญที่มีประสบการณ์ในอุตสาหกรรมโลจิสติกส์มากกว่า 10 ปี</p>
+            </div>
+            <div class="trainers-grid">
+                <div class="trainer-card">
+                    <div class="trainer-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>ธีรกานต์ บุญมาก</h3>
+                    <span class="trainer-role">ผู้อำนวยการฝ่ายปฏิบัติการ</span>
+                    <p>ประสบการณ์ด้านโลจิสติกส์กว่า 15 ปี เชี่ยวชาญระบบคลังสินค้าและการขนส่ง</p>
+                    <div class="trainer-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>ปิยะพงษ์ ขาวประไพ</h3>
+                    <span class="trainer-role">หัวหน้าทีมพัฒนาบุคลากร</span>
+                    <p>ผู้เชี่ยวชาญด้านการบริการลูกค้าและการสื่อสาร ผ่านการอบรมระดับสากล</p>
+                    <div class="trainer-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>ภูวกร ภาสชญานนท์</h3>
+                    <span class="trainer-role">หัวหน้าทีมพัฒนาบุคลากร</span>
+                    <p>ผู้เชี่ยวชาญด้านการบริการลูกค้าและการสื่อสาร ผ่านการอบรมระดับสากล</p>
+                    <div class="trainer-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>วริทธิ์ธรณ์ ศานติกาญจน์</h3>
+                    <span class="trainer-role">ผู้เชี่ยวชาญด้าน AI & Tech</span>
+                    <p>ผู้พัฒนาระบบ AI สำหรับการขนส่งและจัดเส้นทางอัจฉริยะ</p>
+                    <div class="trainer-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="section schedule" id="schedule">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">ตารางอบรม</span>
+                <h2 class="section-title">ตาราง<span class="text-yellow">การอบรม</span>ล่าสุด</h2>
+                <p class="section-subtitle">เลือกรอบการอบรมที่เหมาะกับคุณ</p>
+            </div>
+            <div class="schedule-table-wrapper">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>หลักสูตร</th>
+                            <th>วันที่</th>
+                            <th>เวลา</th>
+                            <th>สถานที่</th>
+                            <th>ที่นั่งคงเหลือ</th>
+                            <th>สถานะ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>ยกระดับบริการ สู่มือโปรด้านการขนส่ง</strong></td>
+                            <td>25 ก.พ. 2569</td>
+                            <td>16.00 - 19.00 น.</td>
+                            <td>ห้อง SC-9 406 ชั้น 4</td>
+                            <td><span class="seats-available">30 ที่นั่ง</span></td>
+                            <td><span class="status-badge open">เปิดรับสมัคร</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section - QR Code -->
+    <section class="section register" id="register">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">ลงทะเบียน</span>
+                <h2 class="section-title">สแกน QR Code <span class="text-yellow">เข้าอบรม</span></h2>
+                <p class="section-subtitle">สแกน QR Code ด้านล่างเพื่อลงทะเบียนเข้าร่วมหลักสูตรการอบรม</p>
+            </div>
+            <div class="qr-wrapper">
+                <div class="qr-card">
+                    <div class="qr-glow"></div>
+                    <div class="qr-image-container">
+                        <img src="../image/qrcode.png" alt="QR Code ลงทะเบียนเข้าอบรม Flash Express" class="qr-image">
+                    </div>
+                    <div class="qr-info">
+                        <h3><i class="fas fa-qrcode"></i> สแกนเพื่อลงทะเบียน</h3>
+                        <p>ใช้กล้องมือถือหรือแอป QR Scanner สแกน QR Code<br>เพื่อเข้าสู่หน้าลงทะเบียนอบรม</p>
+                        <div class="qr-steps">
+                            <div class="qr-step">
+                                <span class="qr-step-num">1</span>
+                                <span>เปิดกล้องมือถือ</span>
+                            </div>
+                            <div class="qr-step">
+                                <span class="qr-step-num">2</span>
+                                <span>เล็งไปที่ QR Code</span>
+                            </div>
+                            <div class="qr-step">
+                                <span class="qr-step-num">3</span>
+                                <span>กดลิงก์เพื่อลงทะเบียน</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="qr-contact-row">
+                    <div class="qr-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <strong>โทรศัพท์</strong>
+                            <p>098-7654321</p>
+                        </div>
+                    </div>
+                    <div class="qr-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>อีเมล</strong>
+                            <p>flash.es@ku.th</p>
+                        </div>
+                    </div>
+                    <div class="qr-contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>เวลาทำการ</strong>
+                            <p>25 ก.พ. 2569 16.00 - 19.00 น. ห้อง SC-9 406 ชั้น 4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="footer-logo">
+                        <i class="fas fa-bolt logo-icon"></i>
+                        <span>Flash <span class="text-yellow">Express</span></span>
+                    </a>
+                    <p>บริการขนส่งพัสดุชั้นนำของประเทศไทย พร้อมพัฒนาบุคลากรสู่ความเป็นเลิศ</p>
+                </div>
+                <div class="footer-col">
+                    <h4>หลักสูตรยอดนิยม</h4>
+                    <ul>
+                        <li><a href="#">ยกระดับบริการ สู่มือโปรด้านการขนส่ง</a></li>
+                        <li><a href="#">การบริหารคลังสินค้า</a></li>
+                        <li><a href="#">เทคโนโลยี AI ในโลจิสติกส์</a></li>
+                        <li><a href="#">การขนส่งระหว่างประเทศ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>ลิงก์ด่วน</h4>
+                    <ul>
+                        <li><a href="#about">เกี่ยวกับเรา</a></li>
+                        <li><a href="#courses">หลักสูตรอบรม</a></li>
+                        <li><a href="#trainers">วิทยากร</a></li>
+                        <li><a href="#register">ลงทะเบียน</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>ติดต่อเรา</h4>
+                    <ul>
+                        <li><i class="fas fa-phone-alt"></i> 098-7654321</li>
+                        <li><i class="fas fa-envelope"></i> flash.es@ku.th</li>
+                        <li><i class="fas fa-map-marker-alt"></i> กำเเพงเเสน, มหาวิทยาลัยเกษตรศาสตร์</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2569 Flash Express Training. สงวนลิขสิทธิ์ทุกประการ</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+
+
+    <script src="../styles/script.js"></script>
+</body>
+</html>
