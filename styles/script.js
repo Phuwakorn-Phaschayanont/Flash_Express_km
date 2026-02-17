@@ -37,6 +37,16 @@ navLinks.querySelectorAll('a').forEach(link => {
     });
 });
 
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (navLinks.classList.contains('active') && 
+        !navLinks.contains(e.target) && 
+        !hamburger.contains(e.target)) {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+    }
+});
+
 // ===== Active Nav Link on Scroll =====
 const sections = document.querySelectorAll('section[id]');
 window.addEventListener('scroll', () => {

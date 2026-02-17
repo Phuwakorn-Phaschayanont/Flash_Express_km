@@ -1624,3 +1624,73 @@ img {
         font-size: 0.8rem;
     }
 }
+
+/* ===== ICT/PDF Section ===== */
+.ict-section {
+    background: linear-gradient(135deg, var(--gray-100) 0%, var(--white) 100%);
+    padding: 80px 0;
+}
+
+.pdf-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.pdf-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    background: var(--white);
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 700px;
+    border: none;
+}
+
+.pdf-actions {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .pdf-viewer {
+        height: 500px;
+    }
+    
+    .pdf-actions {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .pdf-actions .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pdf-viewer {
+        height: 400px;
+    }
+}
